@@ -4,7 +4,7 @@ def agregar_turno():
     nombre = input("Ingresa el nombre del cliente: ")
     fecha = input("Ingresa la fecha del turno (formato YYYY-MM-DD) : ")
     hora = input("Ingresa la hora del turno (formato HH:MM) : ")
-    try=
+    try :
         fecha_hora = datetime.datetime.strptime(f"{fecha} {hora}", "%Y-%m-%d %H:%M")
         turnos.append({"nombre": nombre, "fecha_hora": fecha_hora})
         print(f"Turno agregado para {nombre} el {fecha_hora.strftime('%Y-%m-%d %H:%M')}")
